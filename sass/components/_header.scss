@@ -1,0 +1,126 @@
+.header {
+    background: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-company-name1 {
+    color: #2196F3;
+    margin-right: 93px;
+}
+
+.header-company-name2 {
+    color: #212121;
+}
+
+.header-company-name1,
+.header-company-name2 {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.header-gmail, .header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
+
+.page-buttons {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &:hover {
+        color: #2196F3;
+    }
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+.studio {
+    color: #2196F3;
+}
+
+.studio::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+.page-buttons-studio:after {
+    bottom: 0;
+    transform: translate(-100%);
+}
+
+.header-contacts {
+    &:hover {
+        color: #2196F3;
+    }
+    &:focus {
+        color: #2196F3;
+    }
+    &:hover .header-contact-logo {
+        fill: #2196F3;
+    }
+    &:focus .header-contact-logo {
+        fill: #2196F3;
+    }
+}
+
+.navigate-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.navigate-item {
+    margin-right: 50px;
+}
+
+/* Contacts */
+
+.header-contact-list {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-left: auto;
+}
+
+.header-gmail {
+    margin-right: 50px;
+}
+
+.header-contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.header-contact-logo {
+    margin-right: 10px;
+    fill: #757575;
+    cursor: pointer;
+}
