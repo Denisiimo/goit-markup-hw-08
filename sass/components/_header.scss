@@ -1,9 +1,17 @@
 .header {
     background: #FFFFFF;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ECECEC;
     position: relative;
+    @include tablet {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @include desktop {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .header .container {
@@ -22,38 +30,149 @@
 
 .header-company-name1,
 .header-company-name2 {
-    text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.03em;
+    @include desktop {
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
 }
 
-.header-gmail, .header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-    display: flex;
-    align-items: center;
+.header-gmail {
+    display: none;
+    @include tablet {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #757575;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &:hover {
+            color: #2196F3;
+        }
+        &:focus {
+            color: #2196F3;
+        }
+        &:hover .header-contact-logo {
+            fill: #2196F3;
+        }
+        &:focus .header-contact-logo {
+            fill: #2196F3;
+        }
+    }
+    @include desktop {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        margin-right: 50px;
+        color: #757575;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        &:hover {
+            color: #2196F3;
+        }
+        &:focus {
+            color: #2196F3;
+        }
+        &:hover .header-contact-logo {
+            fill: #2196F3;
+        }
+        &:focus .header-contact-logo {
+            fill: #2196F3;
+        }
+    }
+}
+
+.header-tel {
+    display: none;
+    @include tablet {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #757575;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: #2196F3;
+        }
+        &:focus {
+            color: #2196F3;
+        }
+        &:hover .header-contact-logo {
+            fill: #2196F3;
+        }
+        &:focus .header-contact-logo {
+            fill: #2196F3;
+        }
+    }
+    @include desktop {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: #2196F3;
+        }
+        &:focus {
+            color: #2196F3;
+        }
+        &:hover .header-contact-logo {
+            fill: #2196F3;
+        }
+        &:focus .header-contact-logo {
+            fill: #2196F3;
+        }
+    }
 }
 
 /* Navigation */
 
-.page-buttons {
-    text-decoration: none;
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    &:hover {
-        color: #2196F3;
+.header-nav-buttons {
+    display: none;
+    @include tablet {
+        display: block;
+        text-decoration: none;
+        color: #212121;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        &:hover {
+            color: #2196F3;
+        }
+        &:focus {
+            color: #2196F3;
+        }
     }
-    &:focus {
-        color: #2196F3;
+    @include desktop {
+        display: block;
+        text-decoration: none;
+        color: #212121;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        &:hover {
+            color: #2196F3;
+        }
+        &:focus {
+            color: #2196F3;
+        }
     }
 }
 
@@ -69,26 +188,7 @@
     border-radius: 2px;
     position: absolute;
     bottom: 0;
-}
-
-.page-buttons-studio:after {
-    bottom: 0;
-    transform: translate(-100%);
-}
-
-.header-contacts {
-    &:hover {
-        color: #2196F3;
-    }
-    &:focus {
-        color: #2196F3;
-    }
-    &:hover .header-contact-logo {
-        fill: #2196F3;
-    }
-    &:focus .header-contact-logo {
-        fill: #2196F3;
-    }
+    transform: translate(-100%)
 }
 
 .navigate-list {
@@ -105,22 +205,25 @@
 
 .header-contact-list {
     display: flex;
-    align-items: center;
-    padding: 0px;
-    margin-left: auto;
-}
-
-.header-gmail {
-    margin-right: 50px;
-}
-
-.header-contact-item {
-    display: flex;
-    align-items: center;
+    @include tablet {
+        display: block;
+    }
+    @include desktop {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
 }
 
 .header-contact-logo {
-    margin-right: 10px;
-    fill: #757575;
-    cursor: pointer;
+    @include tablet {
+        margin-right: 8px;
+        fill: #757575;
+        cursor: pointer;
+    }
+    @include desktop {
+        margin-right: 10px;
+        fill: #757575;
+        cursor: pointer;
+    }
 }

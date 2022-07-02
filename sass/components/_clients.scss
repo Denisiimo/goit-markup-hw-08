@@ -5,12 +5,17 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-bottom: 50px;
     margin: 0;
+    padding-bottom: 30px;
+    @include desktop {
+        padding-bottom: 50px;
+    }
 }
 
 .clients-brand-list {
+    gap: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clients-brand-item {
@@ -18,7 +23,7 @@
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
     &:hover {
         border-color: #2196F3;
         fill: #2196F3;
@@ -26,6 +31,12 @@
     &:focus {
         border-color: #2196F3;
         fill: #2196F3;
+    }
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
+    @include desktop {
+        width: calc((100% - 150px) / 6);
     }
 }
 

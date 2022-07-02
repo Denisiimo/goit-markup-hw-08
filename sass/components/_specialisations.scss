@@ -1,7 +1,7 @@
 .specialisation__container {
     background: #F5F4FA;
     border-radius: 4px;
-    max-width: 450px;
+    width: 450px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -20,25 +20,17 @@
 }
 
 .specialisation {
-    @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    @include desktop {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .specialisation__item {
     @include tablet {
-        max-width: 354px;
-        flex-basis: 50%;
-        gap: 30px;
+        width: calc((100% - 30px) / 2);
     }
     @include desktop {
-        max-width: 270px;
-        margin-right: 30px;
+        width: calc((100% - 90px) / 4);
     }
 }
 
@@ -56,6 +48,10 @@
     @include desktop {
         width: 270px;
     }
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .specialisation__text {
@@ -65,7 +61,7 @@
     color: #757575;
     margin-bottom: 0px;
     @include tablet {
-        width: 270px;
+        width: 100%;
     }
     @include desktop {
         width: 270px;

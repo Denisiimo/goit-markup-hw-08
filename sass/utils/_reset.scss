@@ -18,9 +18,17 @@ h1,h2,h3,h4,h5,h6,p {
     padding-bottom: 0;
 }
 
+button {
+    padding: 0;
+}
+
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .button {

@@ -1,16 +1,30 @@
-.hero .container {
+.hero-container {
+    background: #E5E5E5;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    min-height: 400px;
+    margin: 0 auto;
+    @include tablet {
+        width: 768px;
+    }
+    @include desktop {
+        width: 1200px;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 }
 
 .button-title {
-    font-family: inherit;
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 2.14;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--main-color);
     background: #2196F3;
@@ -23,10 +37,17 @@
 
 .main-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-bottom: 30px;
     text-transform: uppercase;
     color: #FFFFFF;
+    width: 360px;
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    } 
 }
