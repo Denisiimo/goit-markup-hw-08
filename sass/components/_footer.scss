@@ -1,16 +1,37 @@
-.location {
-    padding: 0;
-}
-
 .footer {
-    background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #2F303A;
+    .container {
+        @include tablet{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @include desktop{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.footer-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+        align-items: unset;
+    }
 }
 
 .footer-name {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        justify-content: unset;
+    }
 }
 
 .footer-company-name1 {
@@ -31,7 +52,19 @@
     letter-spacing: 0.03em;
 }
 
+.container-footer-address {
+    margin-bottom: 60px;
+    @include tablet{
+        margin-right: 165px;
+    }
+    @include desktop {
+        margin-bottom: 0;
+        margin-right: 70px;
+    }
+}
+
 .footer-address {
+    width: 231px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -40,7 +73,24 @@
     margin-bottom: 10px;
 }
 
+.footer-email {
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        justify-content: unset;
+    }
+}
+
+.footer-tel {
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        justify-content: unset;
+    }
+}
+
 .footer-contacts {
+    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -54,12 +104,12 @@
     }
 }
 
-.location-item:not(:last-child) {
-    margin-bottom: 9px;
+.location-item {
+    height: 21px;
 }
 
-.location-list {
-    margin-right: 70px;
+.location-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-title {
@@ -71,6 +121,12 @@
     color: #FFFFFF;
     margin-bottom: 20px;
     padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        display: flex;
+        justify-content: start;
+    }
 }
 
 .footer-soc-list {
@@ -107,22 +163,35 @@
 }
 
 .container-soc-footer {
-    padding-top: 12px;
-    padding-bottom: 40px;
-    margin-right: 93px;
-}
-
-.footer-flex {
-    display: flex;
+    margin-bottom: 60px;
+    @include desktop {
+        padding-top: 12px;
+        margin-bottom: 0px;
+        margin-right: 93px;
+    }
 }
 
 .container-soc-subscribtion {
-    padding-top: 12px;
-    padding-bottom: 32px;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    @include desktop {
+        padding-top: 12px;
+        padding-bottom: 0;
+    }
 }
 
 .footer-subscription-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .footer-subscription-title {
@@ -133,6 +202,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        justify-content: start;
+    }
 }
 
 .footer-submit-button {
@@ -178,6 +252,14 @@
     padding-left: 16px;
     background-color: transparent;
     outline: none;
+    margin-bottom: 20px;
+    width: 450px;
+    margin-right: 0;
+    @include desktop {
+        margin-bottom: 0;
+        margin-right: 12px;
+        width: 358px;
+    }
 }
 
 .footer-subscription-input:hover,

@@ -16,15 +16,14 @@
 <body>
     <header class="header">
         <div class="container">
-        <!--Header-->
         <a class="header-company-name1" href="/">Web<span class="header-company-name2">Studio</span></a>
         <nav class="navigation">
             <ul class="navigate-list">
                 <li class="navigate-item">
-                    <a class="header-nav-buttons button" href="./index.html">Студия</a>
+                    <a class="studio header-nav-buttons button" href="./index.html">Студия</a>
                 </li>
                 <li class="navigate-item">
-                    <a class="portfolio header-nav-buttons button" href="./portfolio.html">Портфолио</a>
+                    <a class="header-nav-buttons button" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="navigate-item">
                     <a class="header-nav-buttons button" href="">Контакты</a>
@@ -32,17 +31,17 @@
             </ul>
         </nav>
             <ul class="header-contact-list">
-                <li class="header-contact-item">
-                    <a class="header-contacts header-gmail button" href="mailto:info@devstudio.com">
-                        <svg class="header-contact-logo header-contacts" width="16" height="12">
+                <li class="header-contact-email">
+                    <a class="header-gmail button" href="mailto:info@devstudio.com">
+                        <svg class="header-contact-logo" width="16" height="12">
                             <use 
                                 href="./images/symbol-defs.svg#icon-envelope">
                             </use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="header-contact-item">                   
-                    <a class="header-contacts header-tel button" href="tel:+380961111111">
+                <li class="header-contact-tel">                   
+                    <a class="header-tel header-contacts button" href="tel:+380961111111">
                         <svg class="header-contact-logo header-contacts" width="10" height="16">
                             <use
                                 href="./images/symbol-defs.svg#icon-smartphone">
@@ -51,8 +50,8 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="menu-open-button">
-                <svg class="specialisation__logo" width="40" height="40">
+            <button type="button" class="menu-open-button button">
+                <svg width="40" height="40">
                     <use
                         href="./images/symbol-defs.svg#icon-menu">
                     </use>
@@ -61,55 +60,56 @@
         </div>
         <div class="mob-menu is-hidden">
             <div class="mob-container">
-            <button type="button" class="menu-close-button">X</button>
+            <button type="button" class="menu-close-button button">
+                <svg class="menu-close-icon" width="20" height="20">
+                    <use
+                        href="./images/symbol-defs.svg#icon-Close-modal">
+                    </use>
+                </svg>
+            </button>
             <nav class="mob-navigation">
                 <ul class="mob-navigate-list">
                     <li class="mob-navigate-item">
-                        <a class="mob-studio mob-header-nav-buttons button" href="./index.html">Студия</a>
+                        <a class="mob-nav-buttons button" href="./index.html">Студия</a>
                     </li>
                     <li class="mob-navigate-item">
-                        <a class="mob-header-nav-buttons button" href="./portfolio.html">Портфолио</a>
+                        <a class="mob-portfolio mob-nav-buttons button" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="mob-navigate-item">
-                        <a class="mob-header-nav-buttons button" href="">Контакты</a>
+                        <a class="mob-nav-buttons button" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="mob-contact-list">
-                <li class="mob-contact-email">
-                    <a class="mob-contacts button" href="mailto:info@devstudio.com">
-                        <svg class="mob-contact-logo mob-contacts" width="16" height="12">
-                            <use 
-                                href="./images/symbol-defs.svg#icon-envelope">
-                            </use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="mob-contact-tel">                   
-                    <a class="mob-contacts button" href="tel:+380961111111">
-                        <svg class="mob-contact-logo mob-contacts" width="10" height="16">
-                            <use
-                                href="./images/symbol-defs.svg#icon-smartphone">
-                            </use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-            <ul class="mob-soc-list">
-                <li class="mob-soc-item">
-                    <a href="" class="mob-soc-link">Instagram</a>
-                </li>
-                <li class="mob-soc-item">
-                    <a href="" class="mob-soc-link">Twitter</a>
-                </li>
-                <li class="mob-soc-item">
-                    <a href="" class="mob-soc-link">Facebook</a>
-                </li>
-                <li class="mob-soc-item">
-                    <a href="" class="mob-soc-link">Linkedin</a>
-                </li>
-            </ul>
+            <div class="mob-menu-bottom">
+                <ul class="mob-contact-list">
+                    <li class="mob-contact-tel">                   
+                        <a class="mob-tel button" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mob-contact-gmail">
+                        <a class="mob-gmail button" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mob-soc-list">
+                    <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link">Instagram</a>
+                    </li>
+                    <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link">Twitter</a>
+                    </li>
+                    <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link">Facebook</a>
+                    </li>
+                    <li class="mob-soc-item">
+                        <a href="" class="mob-soc-link">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
     </header>
     <main>
         <section class="section">
@@ -238,14 +238,14 @@
     </main>
     <!--WebStudio Footer-->
     <footer class="footer">
-        <div class="container footer-flex">
-            <div class="footer-address-container">
+        <div class="container footer-container">
+            <div class="container-footer-address">
                 <div class="footer-name">
                     <a class="footer-company-name1" href="/">Web<span class="footer-company-name2">Studio</span></a>
                 </div>
                 <address class="location">
                     <ul class="location-list">
-                        <li class="footer-address"><p>г. Киев, пр-т Леси Украинки, 26</p></li>
+                        <li class=""><p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p></li>
                         <li class="location-item"><a class="footer-contacts footer-email" href="mailto:info@example.com">info@example.com</a><br></li>
                         <li class="location-item"><a class="footer-contacts footer-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
                     </ul>
