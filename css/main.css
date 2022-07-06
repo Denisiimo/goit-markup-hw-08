@@ -67,7 +67,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
   }
 }
@@ -393,27 +393,43 @@ button {
 
 .hero-container {
   background: #E5E5E5;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 480px;
-  min-height: 400px;
   margin: 0 auto;
+  padding: 118px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-container {
-    width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-tab.jpg);
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
-    width: 1200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+    padding: 200px 452px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-2x.jpg);
   }
 }
 
@@ -1088,8 +1104,8 @@ button {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1099,6 +1115,12 @@ button {
   transform: translate(-50%, -50%) scale(1);
   transition-timing-function: cubic-bezier(0.37, 0.23, 0.94, 0.82);
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-title {
@@ -1207,6 +1229,7 @@ button {
 
 .modal-agreement-wrapper {
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -1214,14 +1237,23 @@ button {
 }
 
 .modal-agreement-label {
+  width: 370px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #757575;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal-agreement-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 
 .modal-agreement-label::before {
