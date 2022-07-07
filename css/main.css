@@ -269,8 +269,10 @@ button {
   padding-left: 0;
 }
 
-.navigate-item {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .navigate-item {
+    margin-right: 50px;
+  }
 }
 
 /* Contacts */
@@ -280,13 +282,13 @@ button {
 @media screen and (min-width: 768px) {
   .header-contact-list {
     display: block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-contact-list {
     display: flex;
     align-items: center;
-    margin-left: auto;
   }
 }
 
@@ -308,7 +310,6 @@ button {
 .specialisation__container {
   background: #F5F4FA;
   border-radius: 4px;
-  width: 450px;
   height: 120px;
   display: flex;
   align-items: center;
@@ -457,7 +458,7 @@ button {
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 360px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .main-title {
@@ -469,8 +470,8 @@ button {
 
 .work-title, .team-section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -539,7 +540,7 @@ button {
 }
 
 .team__item {
-  width: 450px;
+  width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -556,19 +557,8 @@ button {
 }
 
 .team__image {
-  width: 450px;
+  width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .team__image {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__image {
-    width: 270px;
-  }
-}
-
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -827,6 +817,9 @@ button {
   }
 }
 
+.container-soc-subscribtion {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .container-soc-subscribtion {
     display: flex;
@@ -908,14 +901,13 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #FFFFFF;
-  width: 358px;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
   background-color: transparent;
   outline: none;
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
   margin-right: 0;
 }
 @media screen and (min-width: 1200px) {
@@ -1237,7 +1229,7 @@ button {
 }
 
 .modal-agreement-label {
-  width: 370px;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1349,8 +1341,8 @@ button {
 
 .title-clients {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;

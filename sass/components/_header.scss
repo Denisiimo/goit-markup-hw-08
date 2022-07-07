@@ -198,7 +198,9 @@
 }
 
 .navigate-item {
-    margin-right: 50px;
+    @include tablet {
+        margin-right: 50px;
+    }
 }
 
 /* Contacts */
@@ -207,11 +209,11 @@
     display: flex;
     @include tablet {
         display: block;
+        margin-left: auto;
     }
     @include desktop {
         display: flex;
         align-items: center;
-        margin-left: auto;
     }
 }
 
