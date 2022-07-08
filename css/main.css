@@ -532,6 +532,8 @@ button {
 @media screen and (min-width: 1200px) {
   .team-section__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -909,6 +911,11 @@ button {
   margin-bottom: 20px;
   width: 100%;
   margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscription-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-subscription-input {
@@ -1352,6 +1359,8 @@ button {
 @media screen and (min-width: 1200px) {
   .title-clients {
     padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
